@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.EnsembleSelection -W C:\Users\Akhter\Ensemble-3 -P rmse -A forward -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
+Relation:     D__Study_PhD_Khurram_fake5000-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-T-I-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.CharacterNGramTokenizer -max 3 -min 3-weka.filters.unsupervised.attribute.Remove-R2-8
+Instances:    6337
+Attributes:   1093
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+125 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 0 -L -1 -I 0.0
+75 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+69 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 2 -L -1 -I 0.0
+106 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 3 -L -1 -I 0.0
+69 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 4 -L -1 -I 0.0
+120 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 5 -L -1 -I 0.0
+93 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 6 -L -1 -I 0.0
+98 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 7 -L -1 -I 0.0
+57 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 8 -L -1 -I 0.0
+93 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 9 -L -1 -I 0.0
+
+
+Time taken to build model: 254.49 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        5307               83.7463 %
+Incorrectly Classified Instances      1030               16.2537 %
+Kappa statistic                          0.6742
+Mean absolute error                      0.2527
+Root mean squared error                  0.3445
+Relative absolute error                 50.6261 %
+Root relative squared error             68.9602 %
+Total Number of Instances             6337     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.853    0.179    0.837      0.853    0.845      0.674    0.911     0.913     fake
+                 0.821    0.147    0.838      0.821    0.829      0.674    0.911     0.896     real
+Weighted Avg.    0.837    0.164    0.837      0.837    0.837      0.674    0.911     0.905     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2809  484 |    a = fake
+  546 2498 |    b = real
+
